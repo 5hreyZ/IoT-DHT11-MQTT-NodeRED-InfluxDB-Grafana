@@ -44,12 +44,19 @@ and visualized in Grafana dashboards for real-time monitoring and analysis.
 Reads temperature and humidity from DHT11 and publishes JSON payloads every 5 seconds.
 Flash DHT11_PUB-MQTT.ino into NodeMCU.
 <p align="center"> 
-  <img src="MQTT Success.png" alt="Serial Monitor Output" width="500"><br> 
+  <img src="MQTT Success .png" alt="Serial Monitor Output" width="500"><br> 
 </p>
 
 ### **Step 2 - Install the required dependencies and libraries in the Raspberry Pi**
 
-### **Step 3 - Processing data at the Broker and Visualisation end
+### **Step 3 - Processing data at the Broker**
 Run RPi_SUB-MQTT.py in the Raspberry Pi. This would subscribe to the data published by the NodeMCU.
-Thereafter build your dashboard in Grafana. The data would be stored in InfluxDB which would be routed via NodeRed.
+<p align="center"> 
+  <img src="NMCU_2_RPi.jpg" alt="Terminal Output" width="500"><br> 
+</p>
 
+### **Step 4 - Building the Visualisation**
+Build your dashboard in Grafana. The data would be stored in InfluxDB which would be routed via NodeRed.
+<p align="center"> 
+  <img src="Grafana_graphs.jpeg" alt="Terminal Output" width="500"><br> 
+</p>

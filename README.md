@@ -1,6 +1,6 @@
 # 🌐 IoT-DHT11-MQTT-NodeRED-InfluxDB-Grafana
 
-<p align > <img src="NRed_DB_Grafana.jpg" alt="NodeRED-InfluxDB-Grafana Integration" width="800"> </p>
+<p align="center" > <img src="NRed_DB_Grafana.jpg" alt="NodeRED-InfluxDB-Grafana Integration" width="800"> </p>
 
 ### 📋 Description
 End-to-end IoT data pipeline using NodeMCU (ESP8266) and DHT11 to measure temperature and humidity.  
@@ -20,10 +20,7 @@ and visualized in Grafana dashboards for real-time monitoring and analysis.
 ### 🧩 System Overview
 #### 📊 Data Flow:
 
-
-<p align="center">
   <img src="IoT_BlockDiagram.png" alt="IoT Data Flow Diagram" width="700">
-</p>
 
 ---
 

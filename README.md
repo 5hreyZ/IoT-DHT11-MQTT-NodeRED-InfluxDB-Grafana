@@ -1,6 +1,6 @@
 # 🌐 IoT-DHT11-MQTT-NodeRED-InfluxDB-Grafana
 
-<p align > <img src="images/NRed_DB_Grafana.jpg" alt="NodeRED-InfluxDB-Grafana Integration" width="800"> </p>
+<p align > <img src="NRed_DB_Grafana.jpg" alt="NodeRED-InfluxDB-Grafana Integration" width="800"> </p>
 
 ### 📋 Description
 End-to-end IoT data pipeline using NodeMCU (ESP8266) and DHT11 to measure temperature and humidity.  
@@ -22,13 +22,13 @@ and visualized in Grafana dashboards for real-time monitoring and analysis.
 
 
 <p align="center">
-  <img src="images/IoT_BlockDiagram.png" alt="IoT Data Flow Diagram" width="700">
+  <img src="IoT_BlockDiagram.png" alt="IoT Data Flow Diagram" width="700">
 </p>
 
 ---
 
 ### ⚙️ Components Used
-
+  <img src="Hardware_Setup.jpg" alt="Hardware Setup" width="600"><br> 
 | Component | Function |
 |------------|-----------|
 | **NodeMCU (ESP8266)** | Publishes DHT11 readings to MQTT |
@@ -46,6 +46,9 @@ and visualized in Grafana dashboards for real-time monitoring and analysis.
 ### **Step 1 — NodeMCU publishes DHT11 data via MQTT**
 Reads temperature and humidity from DHT11 and publishes JSON payloads every 5 seconds.
 Flash DHT11_PUB-MQTT.ino into NodeMCU.
+<p align="center"> 
+  <img src="MQTT Success.png" alt="Serial Monitor Output" width="500"><br> 
+</p>
 
 ### **Step 2 - Install the required dependencies and libraries in the Raspberry Pi**
 
@@ -53,7 +56,3 @@ Flash DHT11_PUB-MQTT.ino into NodeMCU.
 Run RPi_SUB-MQTT.py in the Raspberry Pi. This would subscribe to the data published by the NodeMCU.
 Thereafter build your dashboard in Grafana. The data would be stored in InfluxDB which would be routed via NodeRed.
 
-<p align="center"> 
-  <img src="images/Hardware_Setup.jpg" alt="Hardware Setup" width="600"><br> 
-  <img src="images/MQTT_Success.png" alt="Serial Monitor Output" width="500"><br> 
-</p>
